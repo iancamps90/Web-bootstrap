@@ -9,9 +9,63 @@
 </head>
 <body>
     
-    <div id="navbar"></div>
+    <div id="navbar"></div> <!-- Navbar con JS-->
+
+    <section id="buscar"> <!-- filtro de busqueda con formulario -->
+        <div class="container py-3">
+            <div class="card">
+                <div class="card-body">
+                    <form action="#">
+                        <div class="row">
+
+                            <div class="col-lg-4 col-sm-6 col-12"> <!-- Filtro -->
+                                <!-- <label  class="form-label">Buscar</label> -->
+                                <input name="buscar" type="text" class="form-control" placeholder="Buscar">
+                            </div>
+                            
+                            <div class="col-lg-3 col-sm-6 col-12"> <!-- Formulario filtro de consolas -->
+                                <!-- <label  class="form-label">Buscar</label> -->
+                                <select class="form-select" name="consolas">
+                                    <option value="" selected>Consolas</option>
+                                    <option value="">PS5</option>
+                                    <option value="">Xbox Series S|X</option>
+                                    <option value="">Nintendo Switch</option>
+                                    <option value="">PC</option>
+                                    <option value="">Handle PC</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6 col-12"> <!-- Formulario filtro de ciudades -->
+                                <!-- <label  class="form-label">Buscar</label> -->
+                                <select class="form-select" name="localizacion">
+                                    <option value="" selected>Tiendas</option>
+                                    <option value="">Madrid</option>
+                                    <option value="">Barcelona</option>
+                                    <option value="">Valencia</option>
+                                    <option value="">Bilbao</option>
+                                    <option value="">Sevilla</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-2 col-sm-4 col-12"> <!-- boton busqueda -->
+                                <button class="btn btn-success w-100">Buscar</button>
+                            </div>
+
+                            <div class="col-lg-2 col-sm-4 col-12 mt-1"> <!-- boton filtrar-->
+                                <input id="filtrarData" class="form-check-input" type="checkbox" name="filtrar">
+                                <label for="filtrarData" class="form-check-label">Filtrar</label>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     
-        <section>
+        <section> <!-- Categorias -->
             <div class="row">
                 <div class="col">
                     <div class="card">
@@ -133,7 +187,7 @@
             </div>
         </section>
 
-        <section class="container">
+        <section class="container"><!-- Content-->
             <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fuga repellat laboriosam quos possimus</p>
             <a href="#">Ver</a>
@@ -204,8 +258,7 @@
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
-    <script>
-        // Cargar contenido del archivo navbar.html
+    <script> // Cargar contenido del archivo navbar.html
         fetch('navbar.html')
             .then(response => response.text())
             .then(data => document.getElementById('navbar').innerHTML = data);
