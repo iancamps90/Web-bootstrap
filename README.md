@@ -15,3 +15,6 @@
 11. Se crea carpeta assets donde dentro creamos la carpeta css y el fichero css
 12. Importamos el css de bootstrap al css propio
 13. Se añade estilo y diseño a la estructura ya creada.
+14. se crea un header.
+15. se le aplica diseño y se le incorpora al navbar 
+16. se añade una imagen de fondo 
