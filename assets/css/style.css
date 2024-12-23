@@ -1,0 +1,30 @@
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
+
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.categoria-lista i {
+    color: #8800AA;
+}
+
+.categoria-lista .card{
+    height: 100%;
+    margin-top: 5px;
+    transition: .5s all;
+}
+
+.categoria-lista a{
+    text-decoration:none;
+    color: #000;
+}
+
+.categoria-lista .card:hover{
+    color: #FFF;
+    background: #8800AA;
+}
+
+.categoria-lista .card:hover i,
+.categoria-lista .card:hover a
+{
+    color: #FFF;
+    
+}

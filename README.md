@@ -12,3 +12,6 @@
 8. Se añade un formulario - filtro de localización de ciudades de las tiendas.
 9. Se añade botón de búsqueda.
 10. Se añade botón de filtrar.
+11. Se crea carpeta assets donde dentro creamos la carpeta css y el fichero css
+12. Importamos el css de bootstrap al css propio
+13. Se añade estilo y diseño a la estructura ya creada.
